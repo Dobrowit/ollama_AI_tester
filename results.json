@@ -1,0 +1,37 @@
+[
+    {
+        "query": "Jaka jest stolica Francji?",
+        "expected": "Pary\u017c",
+        "response": "ERROR",
+        "duration": 0.0010552406311035156,
+        "score": 0
+    },
+    {
+        "query": "Przet\u0142umacz na angielski: 'Dzie\u0144 dobry, jak si\u0119 masz?'",
+        "expected": "Good morning, how are you?",
+        "response": "ERROR",
+        "duration": 0.0006327629089355469,
+        "score": 0
+    },
+    {
+        "query": "Rozwi\u0105\u017c r\u00f3wnanie: 3x + 5 = 11",
+        "expected": "x = 2",
+        "response": "ERROR",
+        "duration": 0.0004417896270751953,
+        "score": 0
+    },
+    {
+        "query": "Stre\u015b\u0107 poni\u017cszy tekst: 'Ala ma kota. Kot jest czarny i lubi biega\u0107 po podw\u00f3rku.'",
+        "expected": "Ala ma czarnego kota, kt\u00f3ry biega po podw\u00f3rku.",
+        "response": "ERROR",
+        "duration": 0.0003895759582519531,
+        "score": 0
+    },
+    {
+        "query": "Napisz skrypt w Pythonie, kt\u00f3ry zwraca sum\u0119 dw\u00f3ch liczb podanych jako argumenty.",
+        "expected": "def suma(a, b):\n    return a + b",
+        "response": "ERROR",
+        "duration": 0.00038909912109375,
+        "score": 0
+    }
+]
