@@ -19,8 +19,8 @@ def get_available_models():
         response = requests.get(OLLAMA_MODELS_URL, timeout=10)
         response.raise_for_status()
         models = response.json().get("models", [])
-        for model in models:
-            print(model)
+        print("Ollama models:", len(models))
+        print("")
         return [model["name"] for model in models]
     except requests.exceptions.RequestException as e:
         print(f"Błąd podczas pobierania listy modeli: {e}")
@@ -28,17 +28,20 @@ def get_available_models():
 
 # Wysłanie zapytania do modelu
 def query_ollama(model, prompt, context=""):
-    print("Query ollama.")
     payload = {"model": model, "prompt": prompt, "stream": False}
+    print("Query ollama:", payload)
     if context:
         payload["context"] = context
     headers = {"Content-Type": "application/json"}
     start_time = time.time()
     try:
-        response = requests.post(OLLAMA_API_URL, json=payload, headers=headers, timeout=30)
+        response = requests.post(OLLAMA_API_URL, json=payload, headers=headers, timeout=300)
         duration = time.time() - start_time
         response.raise_for_status()
         result = response.json()
+        print("response:", result.get("response", "Brak odpowiedzi"))
+        print(90*"#")
+        print("")
         return {
             "response": result.get("response", "Brak odpowiedzi"),
             "total_duration": result.get("total_duration", 0),
@@ -63,6 +66,8 @@ def run_tests(models, tests, output_file):
             continue
         model_results = []
         print("Model", model)
+        print((len(model)+6)*"=")
+        print("")
         for test in tests:
             question, context = test["query"], test.get("context", "")
             result = query_ollama(model, question, context)
@@ -106,5 +111,8 @@ if __name__ == "__main__":
     md_output = generate_markdown(results)
     with open(markdown_file, "w", encoding="utf-8") as f:
         f.write(md_output)
-    
+
+    print("")
+    print(90*"#")
+    print("")
     print("Testy zakończone. Wyniki zapisane do results.json i results.md")
