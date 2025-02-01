@@ -1,0 +1,6 @@
+[
+    "tinyllama:latest",
+    "mistral:latest",
+    "qwen2:latest",
+    "llama3.2:latest"
+]
