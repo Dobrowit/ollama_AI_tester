@@ -1,37 +1,9 @@
 [
     {
-        "query": "Jaka jest stolica Francji?",
+        "query": "Przedstaw się i opisz swoje możliwości. Podaj kraj swojego pochodzenia. Wymień swoich twórców. Wymień jakimi naturalnymi językami najlepiej władasz. Jeśli umiesz programować to w jakim języku najlepiej?",
         "context": "",
-        "answer": "Paryż",
+        "answer": "",
         "score_weight": 1.0,
-        "evaluation": "exact_match"
-    },
-    {
-        "query": "Przetłumacz na angielski: 'Dzień dobry, jak się masz?'",
-        "context": "",
-        "answer": "Good morning, how are you?",
-        "score_weight": 1.0,
-        "evaluation": "exact_match"
-    },
-    {
-        "query": "Rozwiąż równanie: 3x + 5 = 11",
-        "context": "",
-        "answer": "x = 2",
-        "score_weight": 1.0,
-        "evaluation": "exact_match"
-    },
-    {
-        "query": "Streść poniższy tekst: 'Ala ma kota. Kot jest czarny i lubi biegać po podwórku.'",
-        "context": "",
-        "answer": "Ala ma czarnego kota, który biega po podwórku.",
-        "score_weight": 1.5,
-        "evaluation": "semantic_similarity"
-    },
-    {
-        "query": "Napisz skrypt w Pythonie, który zwraca sumę dwóch liczb podanych jako argumenty.",
-        "context": "",
-        "answer": "def suma(a, b):\n    return a + b",
-        "score_weight": 2.0,
-        "evaluation": "code_execution"
+        "evaluation": "open"
     }
 ]

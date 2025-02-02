@@ -5,6 +5,8 @@ import requests
 # Konfiguracja API Ollama
 OLLAMA_API_URL = "http://localhost:11434/api/generate"
 OLLAMA_MODELS_URL = "http://localhost:11434/api/tags"
+ALL_MODELS = 1
+MAX_SIZE = 17165189120
 
 # Wczytanie testów z pliku JSON
 def load_json(filename):
@@ -19,9 +21,17 @@ def get_available_models():
         response = requests.get(OLLAMA_MODELS_URL, timeout=10)
         response.raise_for_status()
         models = response.json().get("models", [])
+
         print("Ollama models:", len(models))
         print("")
-        return [model["name"] for model in models]
+
+        available_models = []
+        for model in models:
+            model_name = model["name"]
+            model_size = model["size"]
+            available_models.append({"name": model_name, "size": model_size})
+        return available_models    
+        #return [model["name"] for model in models]
     except requests.exceptions.RequestException as e:
         print(f"Błąd podczas pobierania listy modeli: {e}")
         return []
@@ -29,19 +39,22 @@ def get_available_models():
 # Wysłanie zapytania do modelu
 def query_ollama(model, prompt, context=""):
     payload = {"model": model, "prompt": prompt, "stream": False}
-    print("Query ollama:", payload)
+    print("Query ollama:", payload["prompt"])
+
     if context:
         payload["context"] = context
     headers = {"Content-Type": "application/json"}
     start_time = time.time()
     try:
-        response = requests.post(OLLAMA_API_URL, json=payload, headers=headers, timeout=300)
+        response = requests.post(OLLAMA_API_URL, json=payload, headers=headers, timeout=3000)
         duration = time.time() - start_time
         response.raise_for_status()
         result = response.json()
+        
         print("response:", result.get("response", "Brak odpowiedzi"))
         print(90*"#")
         print("")
+
         return {
             "response": result.get("response", "Brak odpowiedzi"),
             "total_duration": result.get("total_duration", 0),
@@ -60,17 +73,31 @@ def run_tests(models, tests, output_file):
     print("Run tests.")
     available_models = get_available_models()
     results = {}
+
+    if ALL_MODELS == 1:
+        models = available_models #wszystkie modele
+        
     for model in models:
         if model not in available_models:
-            print(f"Model {model} nie jest dostępny na serwerze Ollama. Pomijam testy.")
+            print(f"Model {model["name"]} nie jest dostępny na serwerze Ollama. Pomijam testy.")
+            print("")
             continue
+        if model["size"] > MAX_SIZE:
+            print(f"Model {model["name"]} zbyt wielki! Pomijam testy.")
+            print("")
+            continue
+
         model_results = []
-        print("Model", model)
-        print((len(model)+6)*"=")
+
+        print("Model", model["name"])
+        print((len(model["name"])+6)*"=")
+        print(round(model["size"] / 1024 / 1024 / 1024, 1), "GB")
         print("")
+        #a = input("Czekam na ENTER...")
+        
         for test in tests:
             question, context = test["query"], test.get("context", "")
-            result = query_ollama(model, question, context)
+            result = query_ollama(model["name"], question, context)
             model_results.append({
                 "query": question,
                 "expected": test["answer"],
@@ -85,7 +112,7 @@ def run_tests(models, tests, output_file):
                     "eval_duration": result.get("eval_duration", 0) / 1e9
                 }
             })
-        results[model] = model_results
+        results[model["name"]] = model_results
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=4)
     return results

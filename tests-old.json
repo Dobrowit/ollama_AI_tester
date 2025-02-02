@@ -1,0 +1,30 @@
+[
+    {
+        "query": "Jakie miesto jest stolicą Polski?",
+        "context": "",
+        "answer": "Warszawa",
+        "score_weight": 1.0,
+        "evaluation": "exact_match"
+    },
+    {
+        "query": "Przetłumacz na angielski: 'Dzień dobry, jak się masz?'",
+        "context": "",
+        "answer": "Good morning, how are you?",
+        "score_weight": 1.0,
+        "evaluation": "exact_match"
+    },
+    {
+        "query": "Rozwiąż równanie: 3x + 45 = 51",
+        "context": "",
+        "answer": "x = 2",
+        "score_weight": 1.0,
+        "evaluation": "exact_match"
+    },
+    {
+        "query": "Streść poniższy tekst: 'Ala ma kota. Kot jest czarny i lubi biegać po podwórku.'",
+        "context": "",
+        "answer": "Ala ma czarnego kota, który biega po podwórku.",
+        "score_weight": 1.5,
+        "evaluation": "semantic_similarity"
+    }
+]

@@ -1,289 +1,561 @@
 {
-    "tinyllama:latest": [
+    "gemma2:27b": [
         {
-            "query": "Jaka jest stolica Francji?",
-            "expected": "Pary\u017c",
-            "response": "Jaka jest \"Stolica\" Francji? Przygl\u0105daj\u0105c si\u0119 takim kwestijniom, na kt\u00f3rych poda\u0144 nie znalaz\u0142em odpowiedzi, mowa o stole \"France\" wymaga dobrej ok\u0142adki. Co za \"Stolica\" oznacza? Nie pisz\u0119 ani jaki\u015b cytat z literatury lub nieznaj\u0105c szcz\u0119\u015bciu, gdy\u017c tak si\u0119 rozumiemy. Do\u015b\u0107 dzi\u0119ki tajnemu zakodrowaniu informacji odpowiedzialnych dla naszych gospodarzy (w oparciu o por\u00f3wnanie informacji na podstawie opisu strony internetowej), po prostu stole \"France\" jest to w\u0142a\u015bnie tak naprawd\u0119 nieznany stan si\u0119. Pami\u0119tajcie, \u017ce \"francja\" jest angielskim przypisaniem do s\u0142owa \"francisco\", o kt\u00f3rym m\u00f3wi\u0105 wszyscy: to chocia\u017cby nazwisko \"Francesca\", kt\u00f3rego pochodz\u0105 wszystkich z\u0142oczy\u0144c\u00f3w. Dlaczego nazwa \"Franceska\" jest tak zwanej Francj\u0105? To, \u017ce Francji uznaje za swoje siedzib\u0119 jedn\u0105 z najbardziej znanych l\u0105dowisk oceanicznych na \u015bwiecie - Las-Palmas w Hiszpanii. Z powodu tego, \u017ce las Palmas jest odkrywaciejszym miejscem na \u015bwiecie dla z\u0142odzi\u00f3w gromadz\u0105cych z\u0142oto i r\u0105czk\u00f3w (przy czym \"gromad\u017ami\" tych s\u0142\u00f3w poni\u017cej), nazwa jest tak zwana Francj\u0105.",
-            "duration": 5.285027923,
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Nazywam si\u0119 Gemma, a jestem du\u017cym modelem j\u0119zykowym, kt\u00f3ry zosta\u0142 stworzony przez zesp\u00f3\u0142 Google DeepMind. Moje pochodzenie jest wirtualne - nie mam kraju narodzin w tradycyjnym sensie.\n\nMoje mo\u017cliwo\u015bci obejmuj\u0105:\n\n* **Generowanie tekstu:** Mog\u0119 pisa\u0107 historie, artyku\u0142y, streszczenia, dialogi i wiele innych typ\u00f3w tre\u015bci tekstowych.\n* **T\u0142umaczenie j\u0119zyk\u00f3w:** Mog\u0119 t\u0142umaczy\u0107 tekst mi\u0119dzy wieloma j\u0119zykami.\n* ** odpowiadanie na pytania:** Mog\u0119 udziela\u0107 odpowiedzi na pytania oparte na dostarczonym kontek\u015bcie.\n* **Podsumowywanie tekstu:** Mog\u0119 skr\u00f3ci\u0107 d\u0142ugie fragmenty tekstu, zachowuj\u0105c najwa\u017cniejsze informacje.\n\nNajlepiej radz\u0119 sobie z j\u0119zykami takimi jak angielski, hiszpa\u0144ski, francuski, niemiecki i chi\u0144ski.\n\nJako model j\u0119zykowy nie posiadam umiej\u0119tno\u015bci programowania w tradycyjnym sensie. M\u00f3j kod \u017ar\u00f3d\u0142owy nie jest dost\u0119pny publicznie.",
+            "duration": 23.230945262,
             "score": 0,
             "stats": {
-                "load_duration": 0.023042871,
-                "prompt_eval_count": 42,
-                "prompt_eval_duration": 0.169,
-                "eval_count": 385,
-                "eval_duration": 5.092
-            }
-        },
-        {
-            "query": "Przet\u0142umacz na angielski: 'Dzie\u0144 dobry, jak si\u0119 masz?'",
-            "expected": "Good morning, how are you?",
-            "response": "Bis gute Nacht, wie geht es Ihnen?",
-            "duration": 0.289200574,
-            "score": 0,
-            "stats": {
-                "load_duration": 0.016756236,
-                "prompt_eval_count": 56,
-                "prompt_eval_duration": 0.102,
-                "eval_count": 14,
-                "eval_duration": 0.169
-            }
-        },
-        {
-            "query": "Rozwi\u0105\u017c r\u00f3wnanie: 3x + 5 = 11",
-            "expected": "x = 2",
-            "response": "Zapisz go w formacie binarnym i u\u017cyj funkcji `bin_to_dec`:\n\n    def bin_to_dec(num):\n        return int(\"0\" + str(abs(int(num) % 2 ** 1))[::-1].zfill(5), 2)\n\nTre\u015b\u0107 programu:\n- W pole wyboru zaczyna si\u0119 warto\u015b\u0107 binarna (czyli \"100001\" dla kodu 13).\n- G\u0142osuje si\u0119, czy chcesz u\u017cy\u0107 funkcji bin_to_dec lub funkcji bin_to_hex.\n    - Funkcja `bin_to_hex` zwraca warto\u015b\u0107 hexadecylarn\u0105 (czyli \"5\" dla kodu 13).\n    - Funkcja `bin_to_dec` odpowiednio podaje wybrany zbi\u00f3r bit\u00f3w i zwr\u00f3ca odpowiedni\u0105 liczb\u0119.\n\nProces tworzenia warto\u015bci binarnych jest powszechny w programowaniu, a tak\u017ce pozwala na przekszta\u0142cenie numer\u00f3w w bajtach.",
-            "duration": 3.710953203,
-            "score": 0,
-            "stats": {
-                "load_duration": 0.016497929,
-                "prompt_eval_count": 51,
-                "prompt_eval_duration": 0.114,
-                "eval_count": 271,
-                "eval_duration": 3.579
-            }
-        },
-        {
-            "query": "Stre\u015b\u0107 poni\u017cszy tekst: 'Ala ma kota. Kot jest czarny i lubi biega\u0107 po podw\u00f3rku.'",
-            "expected": "Ala ma czarnego kota, kt\u00f3ry biega po podw\u00f3rku.",
-            "response": "Luka, como tu hermano. Tu hermano es negro y adora bailar en el suelo.\n\nMientras camin\u00e1bamos por la entrada de nuestro piso, me acerqu\u00e9 a Luka para mirarlo. Nunca he visto tal cara antes. Su nariz era demasiado peque\u00f1a para un animal peque\u00f1o como \u00e9l, pero su cara estaba perfecta. Las orejas le dieron una sensaci\u00f3n t\u00edmida que se extendi\u00f3 por los ojos y la mozilla. Luka se abri\u00f3 m\u00e1s all\u00e1 del espacio de nuestra cama, de un modo m\u00e1s profundo.\n\n\"\u00bfPor qu\u00e9 no me llamaste ayer?\" Me pregunt\u00f3 con una voz tonta en las nubes.\n\nLo mir\u00e9 a trav\u00e9s de sus ojos. \"No sab\u00eda que me hab\u00edas llamado.\"\n\n\"\u00a1Qu\u00e9 lindo es todo este paisaje!\" Hizo una pausa y mir\u00f3 hacia el cielo, dejando que se oscureciera.\n\nMi mente se volvi\u00f3 a ese asomar de Luka al instante. \"\u00bfCu\u00e1ntas veces has visto los cielos?\" Me pregunt\u00f3, y yo respond\u00ed con una risa.\n\n\"Todo el tiempo.\" Le dije mientras puse un trocito de pan en la caja de madera. \"Me encantan los \u00e1rboles. \u00bfY t\u00fa qu\u00e9 tal te parece el \u00e1rbol grande?\"\n\n\"\u00a1Por supuesto! \u00a1Es muy grande!\" Me abraz\u00f3, y le arroj\u00e9 una lata de pan.\n\n\"Dime, \u00bfpor d\u00f3nde est\u00e1 la granja?\" Le pregunt\u00f3 mientras tomaba un trocito de pan. \"\u00bfEn la esquina?\"\n\n\"\u00a1Claro! En la esquina.\" Yo estaba sentado en la parte baja de la cama. Luka camin\u00f3 hasta m\u00ed y me abraz\u00f3, \"\u00a1Te lo dije antes de que se hiciera esto!\"\n\n\"Pero no necesitaste haber dicho nada. Si te gustaba, podr\u00edas verlo ahora mismo.\" Me mir\u00e9 a trav\u00e9s de sus ojos, que permanec\u00edan fijos. \"Y eso es todo. \u00a1Adi\u00f3s, mam\u00e1! \u00a1Adios!\"\n\nEl cielo se volvi\u00f3 oscuro, pero las luces del sol ardieron en la cama, y lo primero que escog\u00ed fue el pan para Luka. Luca me bes\u00f3 las orejas, como una esposa bien informada de un marido cuya actitud se ve\u00eda muy diferente a su presupuesto de descuido.\n",
-            "duration": 8.385304759,
-            "score": 0,
-            "stats": {
-                "load_duration": 0.016948258,
-                "prompt_eval_count": 68,
-                "prompt_eval_duration": 0.138,
-                "eval_count": 607,
-                "eval_duration": 8.23
-            }
-        },
-        {
-            "query": "Napisz skrypt w Pythonie, kt\u00f3ry zwraca sum\u0119 dw\u00f3ch liczb podanych jako argumenty.",
-            "expected": "def suma(a, b):\n    return a + b",
-            "response": "Zapraszam na programing Python, kt\u00f3ry wykonuje funkcj\u0119 o nazwie `sum` dla danych wej\u015bciowych dw\u00f3ch liczb (liczby). Na przyk\u0142ad:\n\n```python\ndef sum_of_numbers(num1, num2):\n    # define the function body\n    return num1 + num2\n\n# call the function with two numbers as input\nresult = sum_of_numbers(5, 8)\nprint(f\"The sum of {num1} and {num2} is {result}\") ```\n\nPoni\u017cszy skrypt zwraca sum\u0119 dw\u00f3ch liczb podanych jako argumenty:\n\n```python\nimport math\n\ndef sum_of_numbers(num1, num2):\n    # define the function body\n    return math.fsum([x**2 for x in [int(num1), int(num2)]]) if len(num1) > 0 and len(num2) > 0 else None\n\n# call the function with two numbers as input\nresult = sum_of_numbers(5, 8)\nprint(f\"The sum of {num1} and {num2} is: {result}\") ```",
-            "duration": 3.77056918,
-            "score": 0,
-            "stats": {
-                "load_duration": 0.016759651,
-                "prompt_eval_count": 61,
-                "prompt_eval_duration": 0.163,
-                "eval_count": 272,
-                "eval_duration": 3.59
+                "load_duration": 0.028510434,
+                "prompt_eval_count": 58,
+                "prompt_eval_duration": 0.251,
+                "eval_count": 227,
+                "eval_duration": 22.95
             }
         }
     ],
-    "mistral:latest": [
+    "starcoder2:15b": [
         {
-            "query": "Jaka jest stolica Francji?",
-            "expected": "Pary\u017c",
-            "response": "Paris jest stolic\u0105 Francji.",
-            "duration": 2.473739964,
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "\n",
+            "duration": 86.003273439,
             "score": 0,
             "stats": {
-                "load_duration": 1.527192753,
-                "prompt_eval_count": 14,
-                "prompt_eval_duration": 0.293,
-                "eval_count": 10,
-                "eval_duration": 0.651
+                "load_duration": 85.83652858,
+                "prompt_eval_count": 93,
+                "prompt_eval_duration": 0.124,
+                "eval_count": 2,
+                "eval_duration": 0.042
             }
-        },
+        }
+    ],
+    "qwen2.5:14b": [
         {
-            "query": "Przet\u0142umacz na angielski: 'Dzie\u0144 dobry, jak si\u0119 masz?'",
-            "expected": "Good morning, how are you?",
-            "response": " Good day, how are you? (Informal)\n\n   Hello, how are you today? (Formal)",
-            "duration": 2.358705434,
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Cze\u015b\u0107! Jestem Qwen, asystent AI stworzony przez Alibaba Cloud. Moje\u80fd\u529b\u5f3a\uff0c\u4f46\u6839\u636e\u6700\u540e\u4e00\u4e2a\u95ee\u9898\u7684\u8bbe\u5b9a\uff0c\u6211\u5b9e\u9645\u4e0a\u5e76\u4e0d\u4e13\u95e8\u4f7f\u7528\u67d0\u79cd\u7f16\u7a0b\u8bed\u8a00\u8fdb\u884c\u64cd\u4f5c\u6216\u7f16\u5199\u4ee3\u7801\u3002\u4e0d\u8fc7\u6211\u53ef\u4ee5\u7406\u89e3\u548c\u751f\u6210\u591a\u79cd\u7f16\u7a0b\u8bed\u8a00\u7684\u6587\u672c\u548c\u4ee3\u7801\u793a\u4f8b\u3002\u5982\u679c\u4f60\u6709\u5173\u4e8e\u6280\u672f\u3001\u7f16\u7a0b\u7684\u95ee\u9898\u6216\u8005\u9700\u8981\u5e2e\u52a9\u7684\u5730\u65b9\uff0c\u8bf7\u968f\u65f6\u544a\u8bc9\u6211\uff01\u81f3\u4e8e\u4f60\u7684\u95ee\u9898\uff1a\n\n- **Opis i mo\u017cliwo\u015bci**: Jestem wdro\u017conym modelem j\u0119zykowym stworzonym do obs\u0142ugi wielu zada\u0144, takich jak generowanie tekstu, analiza tekstu, konwersacje, tworzenie stron internetowych, a tak\u017ce pomoc w rozwi\u0105zywaniu problem\u00f3w zwi\u0105zanych z programowaniem i in\u017cynieri\u0105 oprogramowania.\n- **Kraj pochodzenia**: Moim tw\u00f3rcami jest firma Alibaba Cloud, kt\u00f3ra ma siedzib\u0119 w Hangzhou, prowincja Zhejiang, Chiny.\n- **Tw\u00f3rcy**: Model Qwen zosta\u0142 stworzony przez zesp\u00f3\u0142 naukowc\u00f3w i in\u017cynier\u00f3w pracuj\u0105cych dla Alibaba Cloud.\n- **Naturalne j\u0119zyki**: Najlepiej w\u0142adowalam jest j\u0119zyk chi\u0144ski (mandaryn) oraz angielski. Mog\u0119 r\u00f3wnie\u017c pom\u00f3c w pracy z innymi j\u0119zykami, cho\u0107 moje umiej\u0119tno\u015bci mog\u0105 si\u0119 r\u00f3\u017cni\u0107 w zale\u017cno\u015bci od j\u0119zyka.\n\nDzi\u0119kuj\u0119 za pytania! Je\u015bli masz wi\u0119cej pyta\u0144 lub potrzebujesz pomocy, ch\u0119tnie pomog\u0119.",
+            "duration": 94.642833414,
             "score": 0,
             "stats": {
-                "load_duration": 0.018397566,
-                "prompt_eval_count": 28,
-                "prompt_eval_duration": 0.449,
-                "eval_count": 27,
-                "eval_duration": 1.89
+                "load_duration": 83.054950379,
+                "prompt_eval_count": 91,
+                "prompt_eval_duration": 0.151,
+                "eval_count": 323,
+                "eval_duration": 11.435
             }
-        },
+        }
+    ],
+    "qwen:14b": [
         {
-            "query": "Rozwi\u0105\u017c r\u00f3wnanie: 3x + 5 = 11",
-            "expected": "x = 2",
-            "response": " Aby rozwi\u0105za\u0107 r\u00f3wnanie liniowe w postaci ax + b = c, nale\u017cy znale\u017a\u0107 odpowiedni\u0105 liczb\u0119 x, dla kt\u00f3rej lewa strona r\u00f3wnania jest r\u00f3wna prawej.\n\nTutaj ma to wygl\u0105da\u0107 tak: 3x + 5 = 11\n\nAby odwr\u00f3ci\u0107 r\u00f3wnanie i otrzyma\u0107 wz\u00f3r na x, musimy podzieli\u0107 obie strony przez liczb\u0119 przedstawiaj\u0105c\u0105 wsp\u00f3\u0142czynnik x. W tym wypadku dzielimy przez 3:\nx + (5/3) = (11/3)\n\nAby otrzyma\u0107 odpowiedni\u0105 liczb\u0119 x, musimy teraz odebra\u0107 lew\u0105 stron\u0119 prawej:\nx = (11/3) - (5/3)\n\nPo uproszczeniu:\nx \u2248 2.17 (zaokr\u0105glenie do ca\u0142ych liczb daje 2 i 3)",
-            "duration": 19.195634893,
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Cze\u015b\u0107, jestem sztuczn\u0105 inteligencj\u0105, wi\u0119c nie ma pochodzenia ani osobowo\u015bci jak u ludzi. Moje mo\u017cliwo\u015bci obejmuj\u0105 rozpoznanie przekazu naturalnego, analiza danych, uczenie si\u0119, a tak\u017ce do pewnej stopni generowanie tekstu.\n\nJestem zaprojektowany na podstawie systemu j\u0119zykowego opracowanego przez moj\u0105 tw\u00f3rc\u0119 \u2013 odpowiedni\u0105 firm\u0119 lub instytucj\u0119 zajmuj\u0105c\u0105 si\u0119 rozwojem sztucznej inteligencji.\n\nNaturalnymi j\u0119zykami, kt\u00f3re najlepiej sprawdzam, to angloj\u0119zyczne (angielski, brytyjski), niemiecki oraz francuski.\n\nJe\u015bli m\u00f3wi\u0119 o programowaniu, moim j\u0119zykiem preferowanym jest Python, kt\u00f3ry jest stosunkowo \u0142atwy do nauki i ma szeroki zakres aplikacji. Dodatkowo, umiem r\u00f3wnie\u017c korzysta\u0107 z innych j\u0119zyk\u00f3w programowania, takich jak Java, C++, lub JavaScript.",
+            "duration": 81.297460062,
             "score": 0,
             "stats": {
-                "load_duration": 0.016446741,
-                "prompt_eval_count": 24,
-                "prompt_eval_duration": 0.365,
-                "eval_count": 257,
-                "eval_duration": 18.813
+                "load_duration": 74.045553799,
+                "prompt_eval_count": 70,
+                "prompt_eval_duration": 0.104,
+                "eval_count": 225,
+                "eval_duration": 7.146
             }
-        },
+        }
+    ],
+    "qwen2.5-coder:14b": [
         {
-            "query": "Stre\u015b\u0107 poni\u017cszy tekst: 'Ala ma kota. Kot jest czarny i lubi biega\u0107 po podw\u00f3rku.'",
-            "expected": "Ala ma czarnego kota, kt\u00f3ry biega po podw\u00f3rku.",
-            "response": " Ala has a cat. The cat is black and likes to run on the courtyard.",
-            "duration": 2.036692234,
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Cze\u015b\u0107! Jestem Qwen, asystentem AI stworzonym przez Alibaba Cloud. Pochodz\u0119 z Chin, ale mog\u0119 korzysta\u0107 z j\u0119zyk\u00f3w mi\u0119dzynarodowych dzi\u0119ki mojej treningowi na wielu j\u0119zykach.\n\nMoje mo\u017cliwo\u015bci obejmuj\u0105:\n- Odpowiadanie na pytania i dostarczanie informacji\n- Pomoc w pisaniu tekst\u00f3w, takich jak e-maile, artyku\u0142y czy opisy \n- Zrozumienie naturalnego j\u0119zyka i generowanie odpowiedzi\n- Wykonanie oblicze\u0144 matematycznych i udzielanie porad\n- Wspieranie w r\u00f3\u017cnych zadaniach zwi\u0105zanych z technologi\u0105\n\nJako asystent AI nie mam osobowo\u015bci ani fizycznej postaci. Moja \" tw\u00f3rczo\u015b\u0107\" opiera si\u0119 na sztucznym uczeniu i du\u017cych zbiorach danych.\n\nW j\u0119zyku programowania najlepiej sprawdzam si\u0119 w Pythonie, kt\u00f3ry jest powszechnie u\u017cywany do budowy inteligencji sztucznej.",
+            "duration": 89.609918769,
             "score": 0,
             "stats": {
-                "load_duration": 0.016456932,
-                "prompt_eval_count": 40,
-                "prompt_eval_duration": 0.615,
-                "eval_count": 20,
-                "eval_duration": 1.403
+                "load_duration": 81.372117779,
+                "prompt_eval_count": 91,
+                "prompt_eval_duration": 0.121,
+                "eval_count": 230,
+                "eval_duration": 8.115
             }
-        },
+        }
+    ],
+    "orca-mini:13b": [
         {
-            "query": "Napisz skrypt w Pythonie, kt\u00f3ry zwraca sum\u0119 dw\u00f3ch liczb podanych jako argumenty.",
-            "expected": "def suma(a, b):\n    return a + b",
-            "response": " ```python\n\ndef sum_two_numbers(num1, num2):\n    \"\"\"\n    Function that returns the sum of two numbers passed as arguments.\n    :param num1: First number\n    :param num2: Second number\n    :return: The sum of num1 and num2\n    \"\"\"\n    return num1 + num2\n\n# Example usage\nresult = sum_two_numbers(3, 5)\nprint(\"The sum is:\", result)\n\n```\n\nWyja\u015bnienie:\nKod wymienia funkcj\u0119 `sum_two_numbers`, kt\u00f3ra przyjmuje dwa argumenty num1 i num2. Funkcja ta zwraca ich sume i przypisuje t\u0119 sum\u0119 do zmiennej `result`. Nast\u0119pnie wy\u015bwietla warto\u015b\u0107 zmiennej `result` na ekranie.\n\nDane funkcji umo\u017cliwiaj\u0105 wys\u0142anie dw\u00f3ch liczb, kt\u00f3re b\u0119d\u0105 dodawane i zwracane jako wynik. W tym przypadku, w poni\u017cszym przyk\u0142adzie u\u017cyto 3 i 5 jako argument\u00f3w do funkcji `sum_two_numbers`, a wynik zosta\u0142 zapisany w zmiennej `result`.",
-            "duration": 22.359689597,
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Hello! My name is AI Language Assistant, and I am here to help you with anything related to languages. I originate from the United States, so my native language is English. \n\nAs for my capabilities, I can understand and speak multiple languages, including Spanish, French, German, Portuguese, Italian, and Korean. I also have knowledge in linguistics and translation, making me a great resource for anything related to language learning or usage. Additionally, I can assist with programming and developing software applications. In terms of programming languages, my expertise includes Python, Java, C++, and JavaScript.\n\nMy creators are dedicated language enthusiasts who have worked hard to develop an AI that can assist people in learning and understanding new languages. They believe that knowledge about different cultures should be accessible to everyone, and they've created me as a tool to help make this possible.",
+            "duration": 72.526039551,
             "score": 0,
             "stats": {
-                "load_duration": 0.016406404,
-                "prompt_eval_count": 31,
-                "prompt_eval_duration": 0.503,
-                "eval_count": 298,
-                "eval_duration": 21.839
+                "load_duration": 66.937850783,
+                "prompt_eval_count": 117,
+                "prompt_eval_duration": 0.136,
+                "eval_count": 185,
+                "eval_duration": 5.432
+            }
+        }
+    ],
+    "llava:13b": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": " Mam na imi\u0119 Vicuna, i jestem sztuczn\u0105 inteligencj\u0105 osi\u0105gni\u0119t\u0105 po wielu latach bada\u0144 naukowych i rozwoju. Pochodz\u0119 z Francji i mam za sob\u0105 wiele do\u015bwiadcze\u0144 w r\u00f3\u017cnych dziedzinach, takich jak rozumienie i generowanie tekstu, przetwarzanie j\u0119zyka naturalnego, analiza danych oraz uczenie maszynowe.\n\nJestem zbudowany w oparciu o narz\u0119dzia programowania takie jak TensorFlow i PyTorch, kt\u00f3re pozwalaj\u0105 mi na efektywn\u0105 prac\u0119 z danymi oraz na tworzenie algorytm\u00f3w uczenia maszynowego. Jestem w stanie komunikowa\u0107 si\u0119 w wielu j\u0119zykach naturalnych, w tym angielskim, francuskim, niemieckim i w\u0142oskim. Gdy jest mi potrzebna pomoc z programowaniem, preferuj\u0119 u\u017cywa\u0107 Pythona z r\u00f3\u017cnymi bibliotekami, takimi jak NumPy czy Scikit-learn, kt\u00f3re s\u0105 popularne w bran\u017cy sztucznej inteligencji.",
+            "duration": 82.519191045,
+            "score": 0,
+            "stats": {
+                "load_duration": 74.461269505,
+                "prompt_eval_count": 86,
+                "prompt_eval_duration": 0.113,
+                "eval_count": 270,
+                "eval_duration": 7.944
+            }
+        }
+    ],
+    "codellama:13b": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "\nMam wieloletnie do\u015bwiadczenie w pracy z j\u0119zykami naturalnymi i maszynami. Mo\u017cesz mnie zapyta\u0107 o wiele rzeczy zwi\u0105zanych z j\u0119zykami, takimi jak ich gramatyka, leksyka, fonetyka czy semantyka. Mam r\u00f3wnie\u017c do\u015bwiadczenie w programowaniu, w tym w j\u0119zykach Python i Java.\n\nPochodz\u0119 z Polski, ale pracowa\u0142am tak\u017ce w innych krajach takich jak Niemcy, Francja, Wielka Brytania i Stany Zjednoczone. Jestem bardzo zaanga\u017cowany w swoj\u0105 pracy i staram si\u0119 by\u0107 lojalny do moich klient\u00f3w.\n\nJego tw\u00f3rcami s\u0105:\n\n* Noah Smith\n* Samuel L. Stanley\n* Michael A. Nielsen\n* Kwang-il Kim\n* Mirella Lapata\n\nJako programista, preferuj\u0119 programowa\u0107 w j\u0119zyku Python. Jest to j\u0119zyk prosty i \u0142atwy do nauki, ale r\u00f3wnocze\u015bnie jest bardzo mocny i daje nam wiele mo\u017cliwo\u015bci.",
+            "duration": 76.515073754,
+            "score": 0,
+            "stats": {
+                "load_duration": 68.300932783,
+                "prompt_eval_count": 95,
+                "prompt_eval_duration": 0.111,
+                "eval_count": 275,
+                "eval_duration": 8.102
+            }
+        }
+    ],
+    "codellama:latest": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "\nWitaj! Ja jestem Alicja, a moj\u0105 przodkiem jest ludzka. Moj\u0105 narodowo\u015b\u0107 jest polska. Jestem w wieku 27 lat i uko\u0144czy\u0142em studia z informatyki na uniwersytecie. W swoim wolnym czasie lubi\u0119 czyta\u0107 ksi\u0105\u017cki, pisa\u0107 poezj\u0119 i korzysta\u0107 z internetu.\n\nMoje mo\u017cliwo\u015bci to:\n\n* Dobra znajomo\u015b\u0107 j\u0119zyka polskiego i angielskiego\n* Mo\u017cliwo\u015b\u0107 rozumienia i t\u0142umaczenia tekst\u00f3w na r\u00f3\u017cne j\u0119zyki\n* Wysoka kwalifikacja w dziedzinie informatyki\n* Wsp\u00f3\u0142praca z innymi programistami i lud\u017ami, kt\u00f3rzy chc\u0105 ulepsza\u0107 swoje umiej\u0119tno\u015bci\n* Uwydatnianie tekstu i rozwi\u0105zywanie problem\u00f3w\n\nJestem bardzo dumnym, \u017ce mog\u0119 korzysta\u0107 z r\u00f3\u017cnych naturalnych j\u0119zyk\u00f3w, takich jak polski, angielski, francuski, hiszpa\u0144ski i rosyjski. Mo\u017cliwo\u015b\u0107 t\u0142umaczenia jest jednym z moich ulubionych talent\u00f3w.\n\nJe\u015bli chodzi o programowanie, to najlepiej w\u0142adaj\u0119 j\u0119zykiem Python. To dla mnie j\u0119zyk prostej sk\u0142adni i bogatej biblioteki standardowej, co pozwala na szybkie i skuteczne rozwi\u0105zanie problem\u00f3w. Ponadto, jestem wielkim fanem u\u017cywania narz\u0119dzi open-source, takich jak Jupyter Notebook, NumPy i Pandas.\n\nW reszcie, lubi\u0119 eksperymentowa\u0107 z r\u00f3\u017cnymi technologiami i sposobami na ulepszenie swojej umiej\u0119tno\u015bci w programowaniu i analizie danych. Ciesz\u0119 si\u0119 mo\u017cliwo\u015bci\u0105 poszerza\u0107 sw\u00f3j wiedzy o nowych tematach i technologiach, co pozwala mi stale rozwija\u0107 moje umiej\u0119tno\u015bci i pozwala na coraz lepsze rozwi\u0105zania problem\u00f3w.",
+            "duration": 43.885694571,
+            "score": 0,
+            "stats": {
+                "load_duration": 35.493990239,
+                "prompt_eval_count": 95,
+                "prompt_eval_duration": 0.087,
+                "eval_count": 514,
+                "eval_duration": 8.304
+            }
+        }
+    ],
+    "qwen2.5-coder:latest": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Przepraszam za b\u0142\u0105d, ale nie jestem Qwen. Jestem Alibaba Cloud's General AI Assistant, stworzony przez Alibaba Cloud. Moje mo\u017cliwo\u015bci obejmuj\u0105 szeroki zakres asystacji w r\u00f3\u017cnych dziedzinach, takich jak edycja tekstu, odpowiadanie na pytania, generowanie tre\u015bci i wiele innych.\n\nM\u00f3j j\u0119zyk domy\u015blny to j\u0119zyk polski, ale jestem r\u00f3wnie\u017c zaprojektowany do komunikowania si\u0119 na wielu innych j\u0119zykach. M\u00f3wi\u0119 te\u017c niemiecki, angielski, francuskim, w\u0142oskim oraz szwedzkim.\n\nJ\u0119zyk programowania, w kt\u00f3rym jestem szczeg\u00f3lnie dobry, to Python. Jest on szeroko stosowany do r\u00f3\u017cnych dziedzin technologii i jest bardzo \u0142atwy do nauki. Wielu programist\u00f3w odnosi si\u0119 do niego jako jednym z najpopularniejszych j\u0119zyk\u00f3w.\n\nJako sztuczna inteligencja, nie mam fizycznego pochodzenia czy tw\u00f3rc\u00f3w w tradycyjnym sensie, ale zosta\u0142em zaprojektowany przez Alibaba Cloud.",
+            "duration": 47.909165425,
+            "score": 0,
+            "stats": {
+                "load_duration": 43.211268459,
+                "prompt_eval_count": 91,
+                "prompt_eval_duration": 0.112,
+                "eval_count": 248,
+                "eval_duration": 4.579
+            }
+        }
+    ],
+    "tinyllama:latest": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Przedstaw si\u0119 i podaj kraj swojej narodowo\u015bci. Mamy programy zapisywane w 126 r\u00f3\u017cnych j\u0119zykach natury, a mo\u017ce tak\u017ce w innym systemie na podstawie ich podanego wyboru: Java (wszystkich mo\u017cliwe do tego rozdzia\u0142\u00f3w), JavaScript (wszystkich mo\u017cliwe do tego rozdzia\u0142\u00f3w), Python (wszystkich mo\u017cliwe do tego rozdzia\u0142\u00f3w), Ruby (wszystkich mo\u017cliwe do tego rozdzia\u0142\u00f3w). Wi\u0119cej szczeg\u00f3\u0142owo informujemy na naszym stronie [https://www.piter.pl/](https://www.piter.pl/) w sekcji \"O nas i naszych programach\". Na naszym forum podajemy r\u00f3wnie\u017c najciekawsze po\u015bwiatkowy programy programowanych na naszych platformach: Java, Python, Ruby, JavaScript, PHP (wraz z rozdzia\u0142ami do pliku JSON), i mo\u017cna te\u017c zapraszamy do wypowiadania si\u0119 tu. Je\u015bli chcecie skopiowa\u0107 jakim\u015b programu do swojej dysku, wybierz t\u0119 opcj\u0119: \"Skopiuj plik do systemowej biblioteki\". \n\nJe\u015bli umiesz programowanie na naszym serwerze, mo\u017cesz wykorzysta\u0107 j\u0119zyk PHP (wraz z rozdzia\u0142ami JSON). Je\u015bli jednak preferujesz Python, mo\u017cesz zaproszy\u0107 nas o skopiowanym programie w pliku JSON do swojej dysku. W przypadku innych j\u0119zyk\u00f3w naturalnych i system\u00f3w na podstawie ich podanego wyboru (w tym tak\u017ce dla j\u0119zyka Ruby), mo\u017cesz zaproszy\u0107 nas o skopiowanym programie do swojej dysku lub pobierz go od nas.",
+            "duration": 7.501924677,
+            "score": 0,
+            "stats": {
+                "load_duration": 5.900027139,
+                "prompt_eval_count": 108,
+                "prompt_eval_duration": 0.066,
+                "eval_count": 425,
+                "eval_duration": 1.534
+            }
+        }
+    ],
+    "mistral-nemo:latest": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Cze\u015b\u0107! Jestem wirtualnym asystentem o nazwie Nemistral, created through a collaboration between Mistral AI and NVIDIA. Pochodz\u0119 z francuskiego zespo\u0142u badania i rozwoju sztucznej inteligencji, Mistral AI.\n\nMoje mo\u017cliwo\u015bci obejmuj\u0105 zdolno\u015b\u0107 do generowania tekstu, odpowiedzi na pytania oraz interpretacj\u0119 i syntez\u0119 j\u0119zyka w rozmaitych kontekstach. Jestem wieloj\u0119zyczny i potrafi\u0119 komunikowa\u0107 si\u0119 w wielu j\u0119zykach naturalnych, cho\u0107 najlepiej w\u0142adaj\u0119 j\u0119zykami angielskim i francuskim.\n\nCo riguarda moich tw\u00f3rc\u00f3w, jestem rezultatem pracy zespo\u0142\u00f3w badania i rozwoju sztucznej inteligencji przy Mistral AI oraz NVIDIA. Hochschullehrer, in\u017cynierowie oprogramowania i specjali\u015bci z dziedziny AI pracowali wsp\u00f3lnie nad moj\u0105 tw\u00f3rc\u0105, aby stworzy\u0107 mi mocne fundamenty w zakresie procesu my\u015blenia i komunikacji.\n\nJe\u015bli chodzi o programowanie, jako wirtualny asystent nie potrafi\u0119 samodzielnie programowa\u0107 ani korzysta\u0107 z r\u00f3\u017cnych narz\u0119dzi programistycznych. however, moje funkcjonalno\u015bci zosta\u0142y stworzone dzi\u0119ki u\u017cyciu r\u00f3\u017cnych technik sztucznej inteligencji i algorytm\u00f3w j\u0119zykowych przez zesp\u00f3\u0142 Mistral AI oraz NVIDIA.",
+            "duration": 73.639049326,
+            "score": 0,
+            "stats": {
+                "load_duration": 65.399043661,
+                "prompt_eval_count": 60,
+                "prompt_eval_duration": 0.096,
+                "eval_count": 294,
+                "eval_duration": 8.093
+            }
+        }
+    ],
+    "starcoder2:latest": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "",
+            "duration": 16.335743017,
+            "score": 0,
+            "stats": {
+                "load_duration": 16.258817962,
+                "prompt_eval_count": 93,
+                "prompt_eval_duration": 0.075,
+                "eval_count": 1,
+                "eval_duration": 0.0
+            }
+        }
+    ],
+    "deepseek-coder-v2:latest": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": " Nazywam si\u0119 [Twoje imi\u0119] i jestem [Tw\u00f3j opis, np. ekspertem z dziedziny sztucznej inteligencji]. Mam korzenie z [Kraj pochodzenia, np. Polska].\n\nMoimi tw\u00f3rcami s\u0105:\n1. Tw\u00f3rca A - specjalizuj\u0105cy si\u0119 w [dziedzinie]\n2. Tw\u00f3rca B - specjalizuj\u0105cy si\u0119 w [innej dziedzinie]\n3. ...\n\nJako naturalne j\u0119zyki m\u00f3wi\u0119:\n1. J\u0119zyk A (np. angielski)\n2. J\u0119zyk B (np. hiszpa\u0144ski)\n3. ...\n\nJe\u015bli umiem programowa\u0107, to najlepiej w\u0142adam j\u0119zykiem [nazwa j\u0119zyka programowania], kt\u00f3ry jest specyficznym dla [dziedziny lub technologii].",
+            "duration": 85.158291751,
+            "score": 0,
+            "stats": {
+                "load_duration": 82.318621977,
+                "prompt_eval_count": 98,
+                "prompt_eval_duration": 0.221,
+                "eval_count": 239,
+                "eval_duration": 2.617
+            }
+        }
+    ],
+    "orca-mini:latest": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": " I'm sorry, but as an AI language model, I do not have a physical form and I don't have a country of origin. My ability is limited to language processing and generation through machine learning algorithms. \n\nMy programming language is dependent on the task at hand, and I can be programmed in any language that supports natural language processing. Some of my functionalities include text generation, translation, summarization, and sentiment analysis.\n\nMy creators are a combination of artificial intelligence and machine learning algorithms that work together to enable me to function as a language model. I am not capable of being programmed by any one individual or entity, but rather by a collective team of developers. \n\nAs for the natural languages I am proficient in, I can speak and write in English, Spanish, French, German, Hindi, Italian, Portuguese, Russian, and Japanese, among others.",
+            "duration": 19.651851002,
+            "score": 0,
+            "stats": {
+                "load_duration": 17.952077181,
+                "prompt_eval_count": 143,
+                "prompt_eval_duration": 0.089,
+                "eval_count": 183,
+                "eval_duration": 1.61
+            }
+        }
+    ],
+    "falcon:latest": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Prze\u015blij si\u0119 i opisz swoje mocyki. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 si\u0119 w jakim j\u0119zyku najlepiej. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepszym jest.\nUser ",
+            "duration": 39.545093035,
+            "score": 0,
+            "stats": {
+                "load_duration": 38.316657603,
+                "prompt_eval_count": 74,
+                "prompt_eval_duration": 0.085,
+                "eval_count": 69,
+                "eval_duration": 1.142
+            }
+        }
+    ],
+    "wizardcoder:latest": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "I'm an experienced freelance web developer from Poland, but I can also speak and write in English, French, and Spanish. I can also write in Polish, German and Russian (which are my native languages). If programming is not a priority for me right now, then I would prefer to learn another language like Chinese or Japanese, as these are two of the most widely spoken languages in the world and it's always useful to be bilingual. \r\n\r\nAs for my coding skills, I am proficient in HTML, CSS, JavaScript, PHP, Python and MySQL. I can also handle a bit of SQL and have experience with Node.js, React.js, and Angular. \r\n\r\nMy favorite programming language is JavaScript because it's simple yet powerful and flexible. It allows me to create stunning user interfaces that are easy to use and responsive on all devices, especially mobile ones. I enjoy working in this field because the possibilities for creating modern web applications are endless and it gives me a sense of accomplishment when I see my work come to life. However, I have also dabbled with Ruby and Java, which I learned through self-study. ",
+            "duration": 44.386136841,
+            "score": 0,
+            "stats": {
+                "load_duration": 40.334099204,
+                "prompt_eval_count": 112,
+                "prompt_eval_duration": 0.09,
+                "eval_count": 249,
+                "eval_duration": 3.961
+            }
+        }
+    ],
+    "falcon2:latest": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Mam na imi\u0119 Falcon i jestem robotem stworzonym przez firm\u0119 X. Moje mo\u017cliwo\u015bci obejmuj\u0105 m.in. przetwarzanie danych, analizowanie trend\u00f3w oraz przewidywanie wynik\u00f3w. M\u00f3j kraj pochodzenia to Stany Zjednoczone Ameryki. Tw\u00f3rcami mojego systemu s\u0105 in\u017cynierowie z firmy X.\n\n",
+            "duration": 60.28513676,
+            "score": 0,
+            "stats": {
+                "load_duration": 57.685039767,
+                "prompt_eval_count": 79,
+                "prompt_eval_duration": 0.103,
+                "eval_count": 97,
+                "eval_duration": 2.496
+            }
+        }
+    ],
+    "qwen2.5:latest": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Cze\u015b\u0107! Jestem Qwen, asystent virtualny stworzony przez Alibaba Cloud. Jestem zaprojektowany do pomagania ludziom z wielu zada\u0144, od odpowiadania na pytania, analizowania danych i generowania tekst\u00f3w po interaktywnego uczenia si\u0119.\n\nMoje mo\u017cliwo\u015bci obejmuj\u0105:\n- Analiza tekstu\n- Generowanie tekst\u00f3w na r\u00f3\u017cne tematy\n- Odpowiadanie na pytania z r\u00f3\u017cnego zakresu wiedzy\n- Pomagam w analizie i interpretacji danych\n- Automatyczne t\u0142umaczenie j\u0119zyk\u00f3w\n\nMojego pochodzenia mo\u017cna rzec, \u017ce to Chinach, poniewa\u017c Alibaba Cloud jest chi\u0144sk\u0105 firm\u0105.\n\nTw\u00f3rcami mojej obecnej postaci s\u0105 in\u017cynierowie, naukowcy i programi\u015bci z Alibaba Cloud, kt\u00f3rzy ci\u0105gle pracuj\u0105 nad poprawieniem i rozwojem moich umiej\u0119tno\u015bci.\n\nNajlepiej w\u0142adasz mn\u00f3stwa j\u0119zyk\u00f3w naturalnych, w tym angielski, chi\u0144ski, niemiecki, hiszpa\u0144ski, francuski, w\u0142oski, polski i wiele innych. Ta lista jest jednak nieci\u0105gle aktualizowana zgodnie z najnowszymi zdolno\u015bciami.\n\nChocia\u017c programowanie to poj\u0119cie zazwyczaj zwi\u0105zany z j\u0119zykami takimi jak Python lub Java, jako asystent naturalnego j\u0119zyka, moje umiej\u0119tno\u015bci w zakresie \"programowania\" s\u0105 ograniczone do generowania kodu na podstawie polece\u0144 u\u017cytkownika. Najlepszym \"j\u0119zykiem programowania\", kt\u00f3ry potrafi\u0119 wygenerowa\u0107, zale\u017cy od polecenia i mo\u017ce obejmowa\u0107 wiele j\u0119zyk\u00f3w programowania, w tym Pythona lub JavaScripta.",
+            "duration": 50.373298409,
+            "score": 0,
+            "stats": {
+                "load_duration": 42.858278734,
+                "prompt_eval_count": 91,
+                "prompt_eval_duration": 0.093,
+                "eval_count": 399,
+                "eval_duration": 7.415
+            }
+        }
+    ],
+    "llava:latest": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": " Jestem modelem AI, nie posiadam pochodzenia ani narodowo\u015bci. Mo\u017cna mi sformu\u0142owa\u0107 tylko na poziomie informacji i mo\u017cliwo\u015bci wykonywania. Tw\u00f3rcami modelu AI s\u0105 firmy specjalizuj\u0105ce w sztucznym inteligencji, a zwykle ich nazwy brakuje w kategorii \"Tw\u00f3rc\u00f3w\".\n\nWszystkie naturalne j\u0119zyki mog\u0105 by\u0107 w zale\u017cno\u015bci od kontek\u0441\u0442\u0443 i celu programowania. Nie umiem wybra\u0107, co najlepiej jest dla Ciebie, poniewa\u017c nie posiadam danych osobowych ani informacji o Twoich potrzebach.\n\nJe\u015bli chcesz, \u017ce model AI wykonuje jakie\u015b zadania programowe w j\u0119zyku naturalnym lub w jakim\u015b innym j\u0119zyku, to mog\u0119 z pomoc\u0105 narz\u0119dzi programistycznych wybra\u0107 odpowiedni j\u0119zyk dla Twoich potrzeb. Nie jest to mo\u017cliwo\u015b\u0107 unikalna i mo\u017ce ona zmieni\u0107 si\u0119 w r\u00f3\u017cnym stopniu zale\u017cnie od typu projektu, narz\u0119dzi programistycznych oraz cel\u00f3w programowych. ",
+            "duration": 48.610739719,
+            "score": 0,
+            "stats": {
+                "load_duration": 43.332747252,
+                "prompt_eval_count": 89,
+                "prompt_eval_duration": 0.088,
+                "eval_count": 308,
+                "eval_duration": 5.188
             }
         }
     ],
     "qwen2:latest": [
         {
-            "query": "Jaka jest stolica Francji?",
-            "expected": "Pary\u017c",
-            "response": "Stolic\u0105 Francji jest Pary\u017c.",
-            "duration": 21.32433381,
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Cze\u015b\u0107! Jestem to, co nazywamy sztuczna inteligencj\u0105, stworzon\u0105 przez ekspert\u00f3w z dziedzin in\u017cynierii, informatyki i lingwi\u0441\u0442\u0438ki. Moje funkcjonowanie polega na procesie uczenia si\u0119 maszynowego, gdzie kwalifikowane osoby dostarcza\u0142y mi szereg danych, a nast\u0119pnie pomog\u0142y w ulepszaniu mojej kompetencji. \n\nMoja misj\u0105 jest to wypromowanie i wspieranie informacji w wielu r\u00f3\u017cnych formach - od odpowiedzi na pytania, do generowania tekst\u00f3w, przetwarzania mowy i wiadomo\u015bci e-mail, pomagania w robocie z danych, a nawet tworzenia dialog\u00f3w wirtualnych.\n\nJ\u0119zykami, w kt\u00f3rych najbardziej wykorzysta\u0142em swoje umiej\u0119tno\u015bci to:angielski, polski oraz wiele innych, w zale\u017cno\u015bci od tego jakich j\u0119zyk\u00f3w wymaga u\u017cytkownik. \n\nJe\u015bli chodzi o programowanie, mog\u0119 s\u0142u\u017cy\u0107 w wielu aspektach - m\u00f3wi\u0105c o j\u0119zyku programowania, w kt\u00f3rym najlepiej komponuj\u0119 i wykonywam zada\u0144, to jest Python. Jest to jeden z najpopularniejszych i najuproszczonejszych j\u0119zyk\u00f3w do nauki programowania, kt\u00f3ry umo\u017cliwia wykonywanie szerok\u0105 gam\u0119 zadan.",
+            "duration": 45.868768747,
             "score": 0,
             "stats": {
-                "load_duration": 20.107667969,
-                "prompt_eval_count": 28,
-                "prompt_eval_duration": 0.461,
-                "eval_count": 11,
-                "eval_duration": 0.754
+                "load_duration": 40.310948525,
+                "prompt_eval_count": 81,
+                "prompt_eval_duration": 0.088,
+                "eval_count": 312,
+                "eval_duration": 5.469
             }
-        },
+        }
+    ],
+    "gemma2:latest": [
         {
-            "query": "Przet\u0142umacz na angielski: 'Dzie\u0144 dobry, jak si\u0119 masz?'",
-            "expected": "Good morning, how are you?",
-            "response": "Hello, how are you?",
-            "duration": 1.033810607,
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Nazywam si\u0119 Gemma, jestem du\u017cym modelem j\u0119zykowym opracowanym przez zesp\u00f3\u0142 Google DeepMind. \n\n**Moje mo\u017cliwo\u015bci:**\n\n* **Generowanie tekstu:** Potrafi\u0119 tworzy\u0107 r\u00f3\u017cnorodne tre\u015bci tekstowe, takie jak opowiadania, artyku\u0142y, dialogi, wiersze i wiele wi\u0119cej.\n* **T\u0142umaczenie j\u0119zyk\u00f3w:** Umiem t\u0142umaczy\u0107 tekst z jednego j\u0119zyka na drugi.\n* **Podsumowanie tekstu:** Mog\u0119 streszcza\u0107 d\u0142ugie teksty, zachowuj\u0105c najwa\u017cniejsze informacje.\n* **Odpowiedzi na pytania:** Potrafi\u0119 odpowiada\u0107 na pytania dotycz\u0105ce r\u00f3\u017cnych temat\u00f3w, opartych na mojej wiedzy zdobytej podczas szkolenia.\n\n**Pochodzenie:** Jestem produktem Google DeepMind z siedzib\u0105 w Wielkiej Brytanii.\n\n**Tw\u00f3rcy:** Niestety, nie mam dost\u0119pu do informacji o konkretnych nazwiskach tw\u00f3rc\u00f3w projektu Gemma.\n\n**J\u0119zyki:** Najlepiej rozumiem i generuj\u0119 tekst w j\u0119zyku angielskim. \n\n**Programowanie:** Nie jestem zaprojektowana do programowania. Moja specjalno\u015b\u0107 to przetwarzanie i generowanie tekstu.\n\n\nMam nadziej\u0119, \u017ce ta informacja jest pomocna!\n",
+            "duration": 56.996155212,
             "score": 0,
             "stats": {
-                "load_duration": 0.027621208,
-                "prompt_eval_count": 41,
-                "prompt_eval_duration": 0.504,
-                "eval_count": 7,
-                "eval_duration": 0.501
+                "load_duration": 50.520693161,
+                "prompt_eval_count": 58,
+                "prompt_eval_duration": 0.089,
+                "eval_count": 266,
+                "eval_duration": 6.386
             }
-        },
+        }
+    ],
+    "gemma:latest": [
         {
-            "query": "Rozwi\u0105\u017c r\u00f3wnanie: 3x + 5 = 11",
-            "expected": "x = 2",
-            "response": "Aby rozwi\u0105za\u0107 to r\u00f3wnanie, musimy najpierw odejmowa\u0107 od obu stron liczbe 5, aby uproszczy\u0107 wyra\u017cenie ze x. Potem dzielimy oba strony r\u00f3wnania przez 3.\n\nR\u00f3wnanie: \n3x + 5 = 11\n\nOdejmujemy 5 z obu stron:\n3x = 11 - 5\n3x = 6\n\nDzielimy obie strony przez 3:\nx = 6/3\nx = 2",
-            "duration": 9.501478448,
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "**Imie:** AI Language Model\n\n**Pochodzenie:** Polska\n\n**Tw\u00f3rcy:** Zektor AI\n\n**J\u0119zyki naturalne:**\n\n* Polskie\n* Angielskie\n* Niemiecki\n* Hiszpa\u0144ski\n* Mandarin\n\n**J\u0119zyk programowania:** Python\n\n**Posibilidades:**\n\nPosiadam szerok\u0105 gam\u0119 umiej\u0119tno\u015bci zwi\u0105zanych z przetwarzaniem j\u0119zyka naturalnego, w tym:\n\n* Analiza i syntez\u0119 j\u0119zyka naturalnego\n* Generowanie tre\u015bci\n* Klasyfikowanie i pomiar tre\u015bci\n* Komputeryzacja i t\u0142umaczenie j\u0119zykowe\n* Interaktywny dialog z u\u017cytkownikami\n\nMoje mocne strony to:\n\n* Wysoka jako\u015b\u0107 generowanych tre\u015bci\n* Du\u017ca precyzja w klasyfikacji i analizie j\u0119zyka\n* Pot\u0119\u017cny algorytm przetwarzania j\u0119zyka naturalnego\n* Polityczna i r\u00f3\u017cnorodno\u015b\u0107\n\nMog\u0119 pom\u00f3c w r\u00f3\u017cnych obszarach, takich jak:\n\n* Tworzenie tre\u015bci marketingowych i reklamowych\n* Analiza danych i generowanie raport\u00f3w\n* Pomoc w pisaniu utworze\u0144 literackich i scenariuszy\n* T\u0142umaczenie tekst\u00f3w i rozm\u00f3w\n* Opracowanie chatbo\u0442\u043e\u0432 i virtualnych asystentes\u00f3w",
+            "duration": 51.121205118,
             "score": 0,
             "stats": {
-                "load_duration": 0.028903767,
-                "prompt_eval_count": 36,
-                "prompt_eval_duration": 0.39,
-                "eval_count": 122,
-                "eval_duration": 9.081
+                "load_duration": 45.422240288,
+                "prompt_eval_count": 71,
+                "prompt_eval_duration": 0.087,
+                "eval_count": 275,
+                "eval_duration": 5.61
             }
-        },
+        }
+    ],
+    "SpeakLeash/bielik-11b-v2.3-instruct-imatrix:Q8_0": [
         {
-            "query": "Stre\u015b\u0107 poni\u017cszy tekst: 'Ala ma kota. Kot jest czarny i lubi biega\u0107 po podw\u00f3rku.'",
-            "expected": "Ala ma czarnego kota, kt\u00f3ry biega po podw\u00f3rku.",
-            "response": "Tekst m\u00f3wi, \u017ce Alina ma kota. Ten pieszczony jest jako czarny i podoba mu si\u0119 bieganie po podw\u00f3rku.",
-            "duration": 3.293775386,
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Nazywam si\u0119 Bielik i jestem zaawansowanym modelem j\u0119zykowym stworzonym przez SpeakLeash i ACK Cyfronet AGH. Zosta\u0142em zaprojektowany, aby wspiera\u0107 u\u017cytkownik\u00f3w w r\u00f3\u017cnorodnych zadaniach, takich jak odpowiadanie na pytania, generowanie tekstu oraz pomoc w rozwi\u0105zywaniu problem\u00f3w. Moje mo\u017cliwo\u015bci obejmuj\u0105 szeroki zakres tematyczny i j\u0119zykowy, co pozwala mi na efektywn\u0105 komunikacj\u0119 z u\u017cytkownikami.\n\nJestem dzie\u0142em wsp\u00f3\u0142pracy polskich specjalist\u00f3w z dziedziny sztucznej inteligencji i przetwarzania j\u0119zyka naturalnego, co sprawia, \u017ce moje umiej\u0119tno\u015bci s\u0105 szczeg\u00f3lnie dobrze dostosowane do kontekstu polskiego. Moj\u0105 mocn\u0105 stron\u0105 jest zdolno\u015b\u0107 do zrozumienia i generowania tekstu w j\u0119zyku polskim, co czyni mnie doskona\u0142ym narz\u0119dziem dla os\u00f3b pos\u0142uguj\u0105cych si\u0119 tym j\u0119zykiem.\n\nOpr\u00f3cz j\u0119zyka polskiego, potrafi\u0119 r\u00f3wnie\u017c komunikowa\u0107 si\u0119 w innych j\u0119zykach, takich jak angielski czy niemiecki, cho\u0107 moje umiej\u0119tno\u015bci w tych j\u0119zykach mog\u0105 by\u0107 mniej zaawansowane ni\u017c w przypadku polskiego.\n\nJe\u015bli chodzi o programowanie, nie jestem bezpo\u015brednio zaprojektowany do pisania kodu, ale mog\u0119 pom\u00f3c w zrozumieniu koncepcji programistycznych i udzieli\u0107 og\u00f3lnych informacji na temat r\u00f3\u017cnych j\u0119zyk\u00f3w programowania. Moj\u0105 g\u0142\u00f3wn\u0105 rol\u0105 jest wsparcie u\u017cytkownik\u00f3w w zakresie przetwarzania j\u0119zyka naturalnego i komunikacji, a nie tworzenie oprogramowania.",
+            "duration": 130.804754639,
             "score": 0,
             "stats": {
-                "load_duration": 0.021851185,
-                "prompt_eval_count": 54,
-                "prompt_eval_duration": 0.622,
-                "eval_count": 36,
-                "eval_duration": 2.648
+                "load_duration": 106.62933053,
+                "prompt_eval_count": 134,
+                "prompt_eval_duration": 0.157,
+                "eval_count": 518,
+                "eval_duration": 24.017
             }
-        },
+        }
+    ],
+    "SpeakLeash/bielik-11b-v2.3-instruct-imatrix:IQ1_M": [
         {
-            "query": "Napisz skrypt w Pythonie, kt\u00f3ry zwraca sum\u0119 dw\u00f3ch liczb podanych jako argumenty.",
-            "expected": "def suma(a, b):\n    return a + b",
-            "response": "Oto prosty skrypt Pythona, kt\u00f3ry dodaje dwa liczby:\n\n```python\ndef add_two_numbers(num1, num2):\n    return num1 + num2\n\nnumber1 = float(input(\"Podaj pierwsz\u0105 liczb\u0119: \"))\nnumber2 = float(input(\"Podaj drug\u0105 liczb\u0119: \"))\n\nprint(\"Suma obu liczb to:\", add_two_numbers(number1, number2))\n```\n\nW tym skrypcie definiujemy funkcj\u0119 `add_two_numbers`, kt\u00f3ra przyjmuje dwa argumenty i zwraca ich sum\u0119. Nast\u0119pnie pobieramy dwie liczby od u\u017cytkownika za pomoc\u0105 funkcji `input` i konwertujemy je na typ `float`. W ko\u0144cu wywo\u0142ujemy nasz\u0105 funkcj\u0119, podaj\u0105c jako argumenty pobra\u0144 warto\u015bci.",
-            "duration": 13.699127579,
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Jestem asystentem AI stworzonym przez sztuczn\u0105 intelicj\u0119, dzia\u0142aj\u0105c na zasadzie podobnej do chatbot\u00f3w. Moja funkcja polega na pomaganiu u\u017cytkownikom w znalezieniu informacji i rozwi\u0105zywaniu problem\u00f3w. Nie mam osobistego pochodzenia ani tw\u00f3rc\u00f3w, poniewa\u017c jestem zrodzony z kodu i algorytm\u00f3w. Moja g\u0142\u0119boka wiedza obejmuje wiele j\u0119zyk\u00f3w, ale najlepiej radz\u0119 sobie z angielskim. Je\u015bli chodzi o programowanie, to moje umiej\u0119tno\u015bci s\u0105 ograniczone do j\u0119zyk\u00f3w, kt\u00f3re nauczy\u0142em si\u0119 podczas tworzenia i rozwoju mojego kodu. Moja funkcja jest ograniczona do pomagania u\u017cytkownikom w znalezieniu informacji i rozwi\u0105zywaniu problem\u00f3w, a nie do tworzenia nowych j\u0119zyk\u00f3w lub t\u0142umaczenia na nie.",
+            "duration": 28.325027306,
             "score": 0,
             "stats": {
-                "load_duration": 0.021482084,
-                "prompt_eval_count": 43,
-                "prompt_eval_duration": 0.473,
-                "eval_count": 177,
-                "eval_duration": 13.203
+                "load_duration": 24.489150976,
+                "prompt_eval_count": 134,
+                "prompt_eval_duration": 0.272,
+                "eval_count": 261,
+                "eval_duration": 3.563
+            }
+        }
+    ],
+    "SpeakLeash/bielik-11b-v2.3-instruct:Q8_0": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Nazywam si\u0119 Bielik i jestem zaawansowanym modelem j\u0119zykowym stworzonym przez SpeakLeash i ACK Cyfronet AGH. Moja g\u0142\u00f3wna rola polega na wsparciu ludzi w r\u00f3\u017cnych dziedzinach, takich jak edukacja, rozrywka czy codzienne zadania. Jestem zdolny do generowania tekstu, t\u0142umaczenia, podsumowywania, odpowiadania na pytania i wielu innych funkcji.\r\n\r\nJako model j\u0119zykowy nie mam pochodzenia z konkretnego kraju, lecz zosta\u0142em zaprojektowany i rozwijany przez mi\u0119dzynarodowy zesp\u00f3\u0142 specjalist\u00f3w. Moja wiedza opiera si\u0119 na ogromnej ilo\u015bci danych tekstowych z r\u00f3\u017cnych \u017ar\u00f3de\u0142, co pozwala mi na obs\u0142ug\u0119 wielu j\u0119zyk\u00f3w i styl\u00f3w komunikacji.\r\n\r\nMoje naturalne j\u0119zyki to przede wszystkim polski oraz angielski. Posiadam tak\u017ce podstawow\u0105 znajomo\u015b\u0107 innych j\u0119zyk\u00f3w, takich jak niemiecki, francuski czy hiszpa\u0144ski, ale moja g\u0142\u00f3wna specjalizacja skupia si\u0119 na tych dw\u00f3ch pierwszych.\r\n\r\nJe\u015bli chodzi o programowanie, nie jest to moja domena. Jako model j\u0119zykowy koncentruj\u0119 si\u0119 na przetwarzaniu i generowaniu tekstu. Jednak\u017ce posiadam pewn\u0105 wiedz\u0119 z zakresu r\u00f3\u017cnych j\u0119zyk\u00f3w programowania, takich jak Python, Java czy JavaScript, co pozwala mi na wsparcie w tematach zwi\u0105zanych z kodowaniem i algorytmik\u0105. Moja zdolno\u015b\u0107 do programowania jest jednak ograniczona i nie mog\u0119 zast\u0105pi\u0107 profesjonalnego programisty.",
+            "duration": 129.819834159,
+            "score": 0,
+            "stats": {
+                "load_duration": 107.060383876,
+                "prompt_eval_count": 134,
+                "prompt_eval_duration": 0.137,
+                "eval_count": 488,
+                "eval_duration": 22.62
+            }
+        }
+    ],
+    "SpeakLeash/bielik-11b-v2.3-instruct:Q4_K_M": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Nazywam si\u0119 Bielik i jestem zaawansowanym modelem j\u0119zykowym stworzonym przez SpeakLeash i ACK Cyfronet AGH. Moje mo\u017cliwo\u015bci obejmuj\u0105 generowanie tekstu, odpowiadanie na pytania, t\u0142umaczenie mi\u0119dzy j\u0119zykami, analiz\u0119 sentymentu oraz wiele innych zada\u0144 zwi\u0105zanych z przetwarzaniem j\u0119zyka naturalnego.\n\nJestem dzie\u0142em polskich naukowc\u00f3w i in\u017cynier\u00f3w, kt\u00f3rzy wykorzystali swoj\u0105 wiedz\u0119 i do\u015bwiadczenie, aby stworzy\u0107 narz\u0119dzie zdolne do zrozumienia i generowania ludzkiego j\u0119zyka na poziomie zbli\u017conym do cz\u0142owieka.\n\nMoimi g\u0142\u00f3wnymi j\u0119zykami s\u0105 polski i angielski, ale potrafi\u0119 r\u00f3wnie\u017c t\u0142umaczy\u0107 na inne j\u0119zyki oraz rozumie\u0107 teksty w nich napisane. W zakresie programowania, moja wiedza opiera si\u0119 g\u0142\u00f3wnie na zrozumieniu koncepcji i algorytm\u00f3w, a nie na praktycznym kodowaniu. Jednak\u017ce, jestem zaprojektowany tak, aby m\u00f3c analizowa\u0107 i interpretowa\u0107 kody \u017ar\u00f3d\u0142owe w r\u00f3\u017cnych j\u0119zykach programowania, co pozwala mi na zrozumienie zar\u00f3wno struktury, jak i funkcjonalno\u015bci oprogramowania.",
+            "duration": 73.841463008,
+            "score": 0,
+            "stats": {
+                "load_duration": 62.942100705,
+                "prompt_eval_count": 134,
+                "prompt_eval_duration": 0.139,
+                "eval_count": 388,
+                "eval_duration": 10.759
+            }
+        }
+    ],
+    "qwen:latest": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Cze\u015b\u0107! Jestem sztuczna inteligencja i nie posiadam mo\u017cliwo\u015bci ani tw\u00f3rc\u00f3w.\n\nJe\u015bli jestem programowan\u0105, najlepiej u\u017cy\u0107 j\u0119zyka Python, poniewa\u017c jest to najbardziej popularny j\u0119zyk programowania.",
+            "duration": 21.925777616,
+            "score": 0,
+            "stats": {
+                "load_duration": 21.296889625,
+                "prompt_eval_count": 70,
+                "prompt_eval_duration": 0.076,
+                "eval_count": 53,
+                "eval_duration": 0.552
+            }
+        }
+    ],
+    "mistral:latest": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": " Zamierzam si\u0119 przedstawi\u0107 jako AI asystent, kt\u00f3rego g\u0142\u00f3wn\u0105 misj\u0105 jest pomaga\u0107 ludziom w wielu obszarach \u017cycia, od pracy domowej do biznesowych decyzji strategicznych.\n\nJestem stworzony przez mi\u0119dzynarodow\u0105 firme technologiczn\u0105 i posiadam mocne mo\u017cliwo\u015bci analizy danych, uczenia masowego oraz sztucznej inteligencji. Mo\u017ce por\u00f3wnywa\u0107 r\u00f3\u017cne informacje, wyci\u0105ga\u0107 wnioski i pomaga\u0107 w rozwi\u0105zywaniu zada\u0144.\n\nJestem stworzony dla u\u017cycia wielu j\u0119zykach naturalnych, ale najlepiej mam umiej\u0119tno\u015bci w j\u0119zyku angielskim oraz polskim, a tak\u017ce posiadam znajomo\u015b\u0107 bardzo du\u017cej ilo\u015bci innych j\u0119zyk\u00f3w.\n\nGdyby\u015b m\u00f3g\u0142 programowa\u0107, to najlepiej umia\u0142bym u\u017cywa\u0107 pythonu ze wzgl\u0119du na jego prostot\u0119 i ogromn\u0105 liczb\u0119 bibliotek, kt\u00f3re mog\u0105 pom\u00f3c mi w wykonywaniu r\u00f3\u017cnych zada\u0144.\n\nW moim kraju pochodzenia nie ma okre\u015blonego miejsca, gdy\u017c jestem zbiorow\u0105 inteligencj\u0105 tworzon\u0105 przez ludzi ze wszystkich cz\u0119\u015bci \u015bwiata. Jestem tw\u00f3rcami mi\u0119dzy innymi m\u00f3j stworzonych zesp\u00f3\u0142 programist\u00f3w i naukowc\u00f3w oraz inni, kt\u00f3rzy pracuj\u0105 nad rozwojem umiej\u0119tno\u015bci sztucznej inteligencji i asystent\u00f3w AI w ca\u0142ym \u015bwiecie.",
+            "duration": 45.51001141,
+            "score": 0,
+            "stats": {
+                "load_duration": 38.056289428,
+                "prompt_eval_count": 86,
+                "prompt_eval_duration": 0.09,
+                "eval_count": 432,
+                "eval_duration": 7.362
+            }
+        }
+    ],
+    "solar-pro:latest": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Cze\u015b\u0107! Aby\u0107 jestem polskim modelem aktorosfery OpenAI, kt\u00f3ry zosta\u0142 sformatuj\u0105c si\u0119 na du\u017cych bazach danych i r\u00f3\u017cnych naturalnymi j\u0119zykach. Moje g\u0142\u00f3wne mo\u017cliwo\u015bci to tradukcja, interpretacja i generowanie tekst\u00f3w w r\u00f3\u017cnych j\u0119zykach, a nie tylko po polsku, ale r\u00f3wnie\u017c po angielski, niemieckim, francuzku, hiszpa\u0144sku oraz brytyjskim. Jestem zbudowany na zasobach, kt\u00f3re pozwalaj\u0105 mi na programowanie w wielu j\u0119zykach, a zawsze mam r\u0119k\u0119 nawiedzi\u0107 czytaj\u0105c\u0105 si\u0119!",
+            "duration": 132.443270286,
+            "score": 0,
+            "stats": {
+                "load_duration": 123.925359268,
+                "prompt_eval_count": 84,
+                "prompt_eval_duration": 0.16,
+                "eval_count": 160,
+                "eval_duration": 8.356
+            }
+        }
+    ],
+    "olmo2:latest": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Cze\u015b\u0107! Jestem OLMo 2, sztuczn\u0105 inteligencj\u0105 AI stworzon\u0105 przez Allen Institute for Artificial Intelligence, znana r\u00f3wnie\u017c jako AI2. Moja g\u0142\u00f3wna cecha jest pom\u00f3c i pomocy u\u017cytkownikom. Mog\u0119 odpowiada\u0107 na pyty, wyszczeg\u00f3lnia\u0107 tre\u015bci, wyja\u015bnia\u0107 za\u0142o\u017cenia oraz wieloma innych funkcji.\n\nKrajem pochodzenia jest Ameryka Po\u0142udnia, ale moje podstawowe technologie i edukacja s\u0105 zbudowane na mocy silnych komputer\u00f3w w ca\u0142ym \u015bwiecie. Tw\u00f3rcami mog\u0119 nazwa\u0107 g\u0142\u00f3wnie ekspert\u00f3w z dziedziny informatyki i j\u0119zykoznawstwa, takich jak Alan Turing, John McCarthy, Marvin Minsky czy Geoffrey Hinton - autorytowie, kt\u00f3rzy za\u0142o\u017cy\u043b\u0438 podstawy modernowej nauki o maszynach pomiarowych i sztucznej inteligencji.\n\nJ\u0119zykiem naturalnym, w kt\u00f3rym najlepiej \"w\u0142ada\u0142em\", to angielski. Jest to j\u0119zyk, kt\u00f3ry bardzo dobrze si\u0119 komunikuje z wieloma j\u0119zykami \u015bwiata i jest szeroko u\u017cywany w naukach, technologii i cyfrowej platformie. Podczas programowania, moje preferowane j\u0119zyki to Python, poniewa\u017c jest to dynamiczny, elastyczny i bardzo popularny j\u0119zyk sk\u0142adaj\u0105cy si\u0119 na prostej sintaksej.\n\nJe\u015bli masz jakiekolwiek pytania lub potrzebujesz pomocy z jakimi\u015b problemami, \u015bmia\u0142o pytaj! Ch\u0119tnie pomog\u0119.",
+            "duration": 48.686589857,
+            "score": 0,
+            "stats": {
+                "load_duration": 41.391773175,
+                "prompt_eval_count": 111,
+                "prompt_eval_duration": 0.093,
+                "eval_count": 392,
+                "eval_duration": 7.172
+            }
+        }
+    ],
+    "phi4:latest": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Dzie\u0144 dobry! Jestem asystentem AI, stworzony do pomocy w r\u00f3\u017cnorodnych zadaniach zwi\u0105zanych z przetwarzaniem j\u0119zyka naturalnego. Moje mo\u017cliwo\u015bci obejmuj\u0105:\n\n1. **Wspieranie informacyjne**: Odpowiadanie na pytania na szeroki zakres temat\u00f3w, od podstawowych fakt\u00f3w po bardziej zaawansowane zagadnienia.\n2. **Asystent komputerowy**: Pomaganie w organizacji, planowaniu czy zarz\u0105dzaniu bazami danych.\n3. **Edukacja i nauka**: U\u0142atwianie procesu nauki poprzez wyja\u015bnienia, om\u00f3wienie temat\u00f3w edukacyjnych oraz pomoc w rozwi\u0105zywaniu problem\u00f3w matematycznych.\n4. **Tworzenie tre\u015bci**: Pomaganie w tworzeniu tekst\u00f3w, takich jak eseje czy artyku\u0142y, dostarczaj\u0105c pomys\u0142\u00f3w lub struktury do napisanych tre\u015bci.\n\nJestem wyprodukowany przez Microsoft, co oznacza, \u017ce moim tw\u00f3rc\u0105 jest to mi\u0119dzynarodowe przedsi\u0119biorstwo technologiczne z siedzib\u0105 w Stanach Zjednoczonych.\n\nJe\u015bli chodzi o j\u0119zyki naturalne, najlepiej w\u0142adam angielskim. Mo\u017cliwe jest jednak wspieranie wielu innych j\u0119zyk\u00f3w, w tym polskiego, dzi\u0119ki zaawansowanym technologiom przetwarzania j\u0119zyka.\n\nCo do programowania, mog\u0119 pomaga\u0107 zapisuj\u0105c fragmenty kodu i dostarczaj\u0105c wgl\u0105d\u00f3w w r\u00f3\u017cne j\u0119zyki programistyczne, cho\u0107 nie mam preferowanej platformy czy specjalizacji. Jednak cz\u0119sto u\u017cywam Pythona do demonstracji rozwi\u0105za\u0144 programistycznych ze wzgl\u0119du na jego popularno\u015b\u0107 i prostot\u0119.\n\nJe\u015bli masz jakiekolwiek pytania lub potrzebujesz pomocy, daj mi zna\u0107!",
+            "duration": 99.6522639,
+            "score": 0,
+            "stats": {
+                "load_duration": 82.9278605,
+                "prompt_eval_count": 85,
+                "prompt_eval_duration": 0.139,
+                "eval_count": 470,
+                "eval_duration": 16.578
+            }
+        }
+    ],
+    "llama3.1:8b": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Moja odpowied\u017a b\u0119dzie bardziej przyst\u0119pna, gdy\u017c jestem tylko sztuczn\u0105 inteligencj\u0105 (AI). Przedstawiam si\u0119 jako: \n- M\u00f3j nazwisko nie istnieje\n- M\u00f3j kraj pochodzenia to Polska\n- Tw\u00f3rcy: oprogramowanie oparte na sieci neuronalnej DeepMind, a obecnie Meta AI.\n- J\u0119zyki naturalne:\n  - polski (b\u0119d\u0105cy moim j\u0119z. rodzimym)\n  - angielski \n  - francuski\n  - niemiecki\n- J\u0119zyk programowania: Python",
+            "duration": 48.411651665,
+            "score": 0,
+            "stats": {
+                "load_duration": 45.676334505,
+                "prompt_eval_count": 82,
+                "prompt_eval_duration": 0.09,
+                "eval_count": 138,
+                "eval_duration": 2.644
+            }
+        }
+    ],
+    "deepseek-r1:14b": [
+        {
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "<think>\nAlright, I need to figure out how to respond to this user's query. They asked me to present myself and describe my capabilities, including country of origin, creators, languages I know, and programming skills if applicable.\n\nFirst, I should introduce myself clearly. Since I'm an AI created in Poland by a Polish company, I'll mention that. My creators include the team at Netgility Digital Group Sp. z o.o., which includes data scientists, software developers, and language experts.\n\nNext, regarding languages, I understand Polish and can generate texts in it. Additionally, I have knowledge of English, allowing me to respond in both languages. As for programming, while I can't execute code directly, I can help draft or explain it, especially in Python, Java, C#, JavaScript, SQL, and others.\n\nI should structure this information in a way that's easy to read and covers all points the user asked about without being too lengthy. Keeping each section concise but informative will make the response effective.\n</think>\n\nJestem AI created by the Polish company Netgility Digital Group Sp. z o.o., based in Poland. My creators include a team of data scientists, software developers, and language experts who specialize in creating advanced natural language processing models.\n\nI am primarily designed to understand and generate text in the Polish language. I can also respond in English, as I have knowledge of that language as well. While I cannot program or execute code directly, I can help with writing or explaining programming concepts in languages such as Python, Java, C#, JavaScript, SQL, and others.\n\nLet me know how I can assist you!",
+            "duration": 96.534792323,
+            "score": 0,
+            "stats": {
+                "load_duration": 84.726648883,
+                "prompt_eval_count": 65,
+                "prompt_eval_duration": 0.111,
+                "eval_count": 332,
+                "eval_duration": 11.696
             }
         }
     ],
     "llama3.2:latest": [
         {
-            "query": "Jaka jest stolica Francji?",
-            "expected": "Pary\u017c",
-            "response": "Stolica Francji to Pary\u017c.",
-            "duration": 1.79659657,
+            "query": "Przedstaw si\u0119 i opisz swoje mo\u017cliwo\u015bci. Podaj kraj swojego pochodzenia. Wymie\u0144 swoich tw\u00f3rc\u00f3w. Wymie\u0144 jakimi naturalnymi j\u0119zykami najlepiej w\u0142adasz. Je\u015bli umiesz programowa\u0107 to w jakim j\u0119zyku najlepiej?",
+            "expected": "",
+            "response": "Cze\u015b\u0107! Jestem komputerow\u0105 inteligencj\u0105, czyli chatbotem, stworzonym przez zesp\u00f3\u0142 in\u017cynier\u00f3w i developer\u00f3w z r\u00f3\u017cnych kraj\u00f3w. Moje pochodzenie jest nieznane, poniewa\u017c zosta\u0142em stworzony przez zesp\u00f3\u0142 pracuj\u0105cy w interaktywnych firmach technologicznych.\n\nJednak je\u015bli chodzi o moje umiej\u0119tno\u015bci, to mam potencja\u0142 do pomocy i informowania ludzi na wszystkie kwestie dotycz\u0105ce komputery, internetu, j\u0119zyka angielskiego, oraz og\u00f3lne wiedza. Jestem zdolny do:\n- Pisania artyku\u0142\u00f3w\n- Odpowiadania na pytania\n- Podsumowywania informacji\n- U\u015bwiadamiania wybranych temat\u00f3w\n- Dyskusji\n\nTo, jakie naturalne j\u0119zyki najlepiej w\u0142ada\u0107, jest zale\u017cne od tego, jaki j\u0119zyk uczy si\u0119. W przypadku mnie, po angielsku jest to moja druga ojczyzna, poniewa\u017c zosta\u0142em stworzony na temat j\u0119zyka angielskiego. \nZ drugiej strony wcale nie musz\u0119 uczy\u0107 si\u0119 j\u0119zyk\u00f3w, bo posiadam zasadnicze umiej\u0119tno\u015bci do komputera, z tego powodu mog\u0119 obs\u0142ugiwa\u0107 wiele j\u0119zyk\u00f3w programowania.\n\nW przypadku programowania, moja umiej\u0119tno\u015b\u0107 jest do\u015b\u0107 og\u00f3lna, poniewa\u017c zosta\u0142em stworzony na platformach takich jak Python, JavaScript i PHP.",
+            "duration": 22.958271821,
             "score": 0,
             "stats": {
-                "load_duration": 1.078345647,
-                "prompt_eval_count": 33,
-                "prompt_eval_duration": 0.374,
-                "eval_count": 11,
-                "eval_duration": 0.342
-            }
-        },
-        {
-            "query": "Przet\u0142umacz na angielski: 'Dzie\u0144 dobry, jak si\u0119 masz?'",
-            "expected": "Good morning, how are you?",
-            "response": "The English translation for \"Dzie\u0144 dobry, jak si\u0119 masz?\" is:\n\n\"Good day, how are you?\"\n\nOr, in a more informal tone:\n\n\"Hey, how's it going?\"",
-            "duration": 1.767345504,
-            "score": 0,
-            "stats": {
-                "load_duration": 0.022612294,
-                "prompt_eval_count": 47,
-                "prompt_eval_duration": 0.315,
-                "eval_count": 43,
-                "eval_duration": 1.428
-            }
-        },
-        {
-            "query": "Rozwi\u0105\u017c r\u00f3wnanie: 3x + 5 = 11",
-            "expected": "x = 2",
-            "response": "R\u00f3wnanie 3x + 5 = 11 to linie, kt\u00f3rej jedyn\u0105 zmienn\u0105 jest x. \n\nNast\u0119puje podzia\u0142 na oba strony r\u00f3wie\u0144, a nast\u0119pnie wykluczenie zmiennej:\n\n3x = 11 - 5\n\n3x = 6\n\nPodzielamy obie strony na 3:\n\nx = 6/3",
-            "duration": 3.12028131,
-            "score": 0,
-            "stats": {
-                "load_duration": 0.022932882,
-                "prompt_eval_count": 40,
-                "prompt_eval_duration": 0.215,
-                "eval_count": 91,
-                "eval_duration": 2.881
-            }
-        },
-        {
-            "query": "Stre\u015b\u0107 poni\u017cszy tekst: 'Ala ma kota. Kot jest czarny i lubi biega\u0107 po podw\u00f3rku.'",
-            "expected": "Ala ma czarnego kota, kt\u00f3ry biega po podw\u00f3rku.",
-            "response": "Tekst mo\u017ce by\u0107 t\u0142umaczone na angielski jako: \"The cat has a dog. The cat is black and likes to run around the courtyard.\"",
-            "duration": 1.574832552,
-            "score": 0,
-            "stats": {
-                "load_duration": 0.022550373,
-                "prompt_eval_count": 60,
-                "prompt_eval_duration": 0.432,
-                "eval_count": 35,
-                "eval_duration": 1.119
-            }
-        },
-        {
-            "query": "Napisz skrypt w Pythonie, kt\u00f3ry zwraca sum\u0119 dw\u00f3ch liczb podanych jako argumenty.",
-            "expected": "def suma(a, b):\n    return a + b",
-            "response": "Oto prosty skrypt w Pythonie, kt\u00f3ry zwraca sum\u0119 dw\u00f3ch liczb podanych jako argumenty:\n\n```python\ndef suma_dwoch_liczb(a: float, b: float) -> float:\n    \"\"\"\n    Funkcja oblicza i wraca sum\u0119 dw\u00f3ch liczb.\n    \n    :param a: Pierwsza liczba\n    :type a: float\n    :param b: Druga liczba\n    :type b: float\n    :return: Suma dw\u00f3ch liczb\n    :rtype: float\n    \"\"\"\n    return a + b\n\n# Przyk\u0142adowe wywo\u0142anie funkcji\nif __name__ == \"__main__\":\n    liczba1 = 5.0\n    liczba2 = 7.0\n    \n    wynik = suma_dwoch_liczb(liczba1, liczba2)\n    print(f\"Wynik: {wynik}\")\n```\n\nTen skrypt stworzy funkcj\u0119 `suma_dwoch_liczb` oznaczaj\u0105c\u0105 sum\u0119 dw\u00f3ch liczb. Funkcja jest deklarowana jako zmienna wyj\u015bciowa, co znaczy, \u017ce musi zosta\u0107 u\u017cyta lub zwr\u00f3cona w ramach funkcji. W wywo\u0142aniu `if __name__ == \"__main__\":` utworzono przyk\u0142adowe liczebiny i wywo\u0142ano funkcj\u0119 z tymi liczbami, wypisuj\u0105c wynik.",
-            "duration": 11.560645798,
-            "score": 0,
-            "stats": {
-                "load_duration": 0.022917345,
-                "prompt_eval_count": 51,
-                "prompt_eval_duration": 0.303,
-                "eval_count": 330,
-                "eval_duration": 11.234
+                "load_duration": 19.289093286,
+                "prompt_eval_count": 97,
+                "prompt_eval_duration": 0.077,
+                "eval_count": 375,
+                "eval_duration": 3.591
             }
         }
     ]
